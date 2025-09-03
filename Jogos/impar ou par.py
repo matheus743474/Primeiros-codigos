@@ -12,15 +12,15 @@ resultado = (jogador + computador) % 2
 
 if resultado == 0 and escolha == "par":
     print("O resultado é par!")
-    print("Você ganhou!")
+    print("\033[0;32mVocê ganhou!\033[m")
 elif resultado == 0 and escolha == "impar":
     print("O resultado é par!")
-    print("Você perdeu!")
+    print("\033[0;31mVocê perdeu!\033[m")
 elif resultado == 1 and escolha == "par":
     print("O resultado é impar!")
-    print("Você perdeu!")
+    print("\033[0;31mVocê perdeu!\033[m")
 elif resultado == 1 and escolha == "impar":
     print("O resultado é impar!")
-    print("Você ganhou")
+    print("\033[0;32mVocê ganhou!\033[m")
 else:
     print("Opção invalida")
