@@ -5,4 +5,4 @@ lado3 = float(input("Digite o valor do terceiro lado: "))
 if lado1 + lado3 > lado2 and lado2 + lado3 > lado1 and lado1 + lado2 > lado3:
     print("Os segmentos acima podem forma um triângulo")
 else:
-    print("Os segmentos acima NÃO PODEM FORMAR um triângulo")
+    print("Os segmentos acima \033[0;31mNÃO PODEM FORMAR\033[m um triângulo")

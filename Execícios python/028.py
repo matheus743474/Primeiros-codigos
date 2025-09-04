@@ -7,12 +7,12 @@ print("Vou pensar em um número entre 0 e 5. Tente adivinhar...")
 print("-" * 57)
 jogador = int(input("Em que número eu pensei? "))
 print("PROCESSANDO...")
-sleep(3)
+sleep(2)
 print("")
 
 if jogador == computador:
-    print("Parabéns! Você ganhou!")
+    print("\033[0;32mParabéns! Você ganhou!\033[m")
     print(f"O número era {computador}")
 else:
-    print("Eu ganhei!")
+    print("\033[0;31mEu ganhei!\033[m")
     print(f"O número era {computador}")
