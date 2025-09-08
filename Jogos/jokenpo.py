@@ -1,7 +1,6 @@
 from time import sleep
 from random import choice
-jogar_de_novo = "sim"
-while jogar_de_novo == "sim":
+while True:
     print("Jokenpo")
     print("[1]\033[0;31mPedra\033[m")
     print("[2]\033[0;33mPapel\033[m")
@@ -13,7 +12,7 @@ while jogar_de_novo == "sim":
     sleep(1)
     print("KEN...")
     sleep(1)
-    print("PO...")
+    print("PO")
     print(f"O computador escolheu {computador}")
     if jogador == "1" and computador == "pedra" or jogador == "2" and computador == "papel" or jogador == "3" and computador == "tesoura":
         print("Empate!")
@@ -24,3 +23,8 @@ while jogar_de_novo == "sim":
     else:
         print("Você jogou uma opção invalida")
     jogar_de_novo = input("Quer jogar de novo? ").lower().strip()
+    if jogar_de_novo != "sim":
+        print("Obrigado por jogar!")
+        break
+    else:
+        print("")
