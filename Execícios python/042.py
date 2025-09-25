@@ -1,12 +1,13 @@
-a = float(input("Digite o primeiro lado do triângulo: "))
-b = float(input("Digite o segundo lado do triângulo: "))
-c = float(input("Digite o terceiro lado do triângulo: "))
+a = float(input("Primeiro segmento: "))
+b = float(input("Segundo segmento: "))
+c = float(input("Terceiro segmento: "))
 if a + b > c and b + c > a and a + c > b:
+    print("Pode formar um triângulo ", end="")
     if a == b and b == c and a == c:
-        print("É um triângulo equilátero")
-    elif a == b or a == c or b == c:
-        print("É um triângulo isósceles")
-    else:
-        print("É um triângulo escaleno")
+        print("equilátero")
+    elif a == b != c or a == c != b or b == c != a:
+        print("isósceles")
+    elif a != b != c != a:
+        print("escaleno")
 else:
-    print("Não é um triângulo")
+    print("Não pode formar um triângulo")
